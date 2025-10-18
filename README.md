@@ -26,7 +26,7 @@ Healthcare communication is **broken**:
 
 **Dr. Aunty** transforms complex lab reports into **understandable, memorable health advice** using a culturally authentic Singaporean aunty persona - direct, caring, and impossible to ignore.
 
-**Demo**: https://youtube.com/shorts/WjyJQtmn_Ok?feature=share
+**Demo**: https://youtube.com/shorts/X-yoNuF6Epo
 
 ### Why This Works
 
