@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dr-aunty"
+version = "1.0.0"
+description = "Dr. Aunty - AI Health Companion with Singaporean Personality"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {text = "MIT"}
+keywords = ["healthcare", "ai", "telegram", "bot", "health-analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Healthcare Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    # Core dependencies (required)
+    "python-telegram-bot>=21.0",      # Telegram bot framework
+    "google-generativeai>=0.8.0",     # Gemini Vision API
+    "groq>=0.9.0",                     # Groq LLM API
+    "mem0ai>=0.1.0",                   # Persistent memory
+    "supabase>=2.7.0",                 # Database
+    "python-dotenv>=1.0.0",            # Environment variables
+    "pillow>=10.2.0",                  # Image processing
+    
+    # Optional dependencies (for video/audio)
+    "fal-client>=0.4.0",               # Video generation (optional)
+    "elevenlabs>=0.2.0",               # Audio generation (optional)
+    "openai>=1.0.0",                   # OpenAI API (optional fallback)
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/dr-aunty"
+Documentation = "https://github.com/yourusername/dr-aunty#readme"
+Repository = "https://github.com/yourusername/dr-aunty"
+Issues = "https://github.com/yourusername/dr-aunty/issues"
+
+[tool.setuptools]
+py-modules = [
+    "main",
+    "config",
+    "health_analyzer",
+    "memory_manager",
+    "database",
+    "video_generator",
+    "prompts"
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
