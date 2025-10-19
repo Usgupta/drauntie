@@ -26,9 +26,9 @@ Healthcare communication is **broken**:
 
 **Dr. Aunty** transforms complex lab reports into **understandable, memorable health advice** using a culturally authentic Singaporean aunty persona - direct, caring, and impossible to ignore.
 
-**Demo**: https://youtube.com/shorts/3MDqSCX68yU?feature=share
+**Demo**: https://youtube.com/shorts/QCO5mo9pc2s
 
-Or can access here: https://drive.google.com/file/d/1aThOdsS4-02uHcOtcI4q6oPbybwlt9pM/view?usp=sharing
+Or can access here: https://drive.google.com/file/d/1VjYWG6biGF8CjpkgPDHZJFQrTORG8Ieo/view?usp=sharing
 
 ### Why This Works
 
@@ -97,13 +97,21 @@ Patient uploads lab report
 - Automatic delivery to both parties
 - Real-world problem solving (health is a family matter)
 
-### 🎥 Talking Avatar Videos
+### 🎥 Talking Avatar Videos & Custom Voice Audio
 
-When enabled, generates **personalized video summaries** with fal.ai:
+**Video summaries** with fal.ai:
 - 3-5 chunked videos (8 seconds each)
 - Authentic Singaporean aunty avatar
 - Perfect for sharing with family
-- Automatic fallback to audio if video fails
+
+**Audio summaries** with custom cloned voice (ElevenLabs):
+- 🔥 **Real Singlish aunty voice** - We cloned an authentic Singaporean aunty voice!
+- 🎯 **Prompt-engineered for sass** - Fine-tuned to add personality and scolding tone
+- 🎤 **Not robotic TTS** - Sounds like a REAL aunty (not generic text-to-speech)
+- 💯 **Automatic fallback** - If video generation fails, audio always works
+- 📱 **Shareable** - Family will actually listen (and laugh!)
+
+This custom voice cloning is our secret weapon - it makes Dr. Aunty feel authentic and memorable!
 
 ### 🧠 Persistent Memory
 
@@ -178,6 +186,15 @@ history = memory_manager.get_health_history(user_id)
 - Handles Singlish and expressive speech
 - Reliable API (unlike many experimental video services)
 - **Fallback strategy:** Audio generation if video fails
+
+#### 🎤 ElevenLabs - Custom Voice Cloning (The Secret Sauce!)
+**Why it's special:** We didn't just use text-to-speech - we cloned an actual Singlish aunty voice!
+- **Voice cloning:** Captured authentic Singaporean aunty accent and tone
+- **Prompt engineering:** Fine-tuned with custom prompts to add sass and personality
+- **Result:** Audio that sounds like a REAL aunty scolding you (not robotic TTS)
+- **Impact:** Makes audio messages shareable and memorable (family will laugh!)
+
+This is a key differentiator - most AI health bots use generic TTS. We have an authentic, cloned voice that matches our personality perfectly.
 
 #### 💾 Supabase - PostgreSQL on Steroids
 **Why it's special:** Real-time database with zero config
@@ -302,10 +319,12 @@ uv pip install -e .
 2. Create account (pay-per-use)
 3. Generate API key
 
-#### ElevenLabs (for audio fallback)
+#### ElevenLabs (for audio - Custom Singlish Aunty Voice!)
 1. Visit [elevenlabs.io](https://elevenlabs.io)
 2. Create account (free tier: 10k chars/month)
 3. Get API key from settings
+
+**Special Feature:**  cloned a real Singlish aunty voice using ElevenLabs' voice cloning, then fine-tuned it with custom prompts to add sass and personality! This makes the audio sound authentic and memorable.
 
 ### 3️⃣ Configure Environment
 
